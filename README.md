@@ -122,6 +122,7 @@ this.floatingAction.animateButton();
 | position                | string                | right                 | Position to render the main button and actions, options: (**left**, **right**, **center**)                          |
 | overrideWithAction      | boolean               | false                 | Override the main action with the first action inside list actions, will not show other action                      |
 | floatingIcon            | node | ReactElement   |                       | Change the default plus icon using **require(pathToImage)** or **ReactElement**                                     |
+| disableSpin             | boolean               | false                 | Disable to rotate the floating icon by 45 degrees                                                                   |
 | showBackground          | boolean               | true                  | **Show** or **Hide** background after open it                                                                       |
 | openOnMount             | boolean               | false                 | Open component after mounting it, useful on some weird cases like tutorials                                         |
 | actionsPaddingTopBottom | number                | 8                     | Change distance between actions                                                                                     |

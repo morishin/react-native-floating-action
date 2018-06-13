@@ -107,8 +107,8 @@ class FloatingAction extends Component {
     const {
       overrideWithAction,
       actions,
-      floatingIcon,
-      onPressMain
+      onPressMain,
+      disableSpin
     } = this.props;
     const { active } = this.state;
 
@@ -123,7 +123,7 @@ class FloatingAction extends Component {
     }
 
     if (!active) {
-      if (!floatingIcon) {
+      if (!disableSpin) {
         Animated.spring(this.animation, { toValue: 1 }).start();
       }
 
@@ -355,6 +355,7 @@ FloatingAction.propTypes = {
   position: PropTypes.oneOf(['right', 'left', 'center']),
   overrideWithAction: PropTypes.bool, // replace mainAction with first action from actions
   floatingIcon: PropTypes.any,
+  disableSpin: PropTypes.bool,
   showBackground: PropTypes.bool,
   openOnMount: PropTypes.bool,
   actionsPaddingTopBottom: PropTypes.number,
@@ -371,7 +372,8 @@ FloatingAction.defaultProps = {
   position: 'right',
   distanceToEdge: 30,
   openOnMount: false,
-  showBackground: true
+  showBackground: true,
+  disableSpin: false
 };
 
 const styles = StyleSheet.create({
