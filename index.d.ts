@@ -22,6 +22,7 @@ declare module 'react-native-floating-action' {
     position?: 'left' | 'right' | 'center';
     overrideWithAction?: boolean;
     floatingIcon?: any; //todo
+    disasbleSpin?: boolean;
     showBackground?: boolean;
     openOnMount?: boolean;
     actionsPaddingTopBottom?: number;
