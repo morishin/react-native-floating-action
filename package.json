@@ -3,6 +3,7 @@
   "version": "1.10.1",
   "description": "floating action component for react-native",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "example": "example"
   },
